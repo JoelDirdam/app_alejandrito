@@ -1,0 +1,161 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #272727;
+  --card: #FFFFFF;
+  --card-foreground: #272727;
+  --popover: #FFFFFF;
+  --popover-foreground: #272727;
+  --primary: #5BC1C3;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F0FAFA;
+  --secondary-foreground: #272727;
+  --muted: #F5F5F5;
+  --muted-foreground: #6B7280;
+  --accent: #5BC1C3;
+  --accent-foreground: #FFFFFF;
+  --destructive: #D42B2B;
+  --destructive-foreground: #FFFFFF;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #5BC1C3;
+  --chart-1: #5BC1C3;
+  --chart-2: #272727;
+  --chart-3: #868F9B;
+  --chart-4: #FF7170;
+  --chart-5: #F0FAFA;
+  --radius: 0.75rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #272727;
+  --sidebar-primary: #5BC1C3;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F0FAFA;
+  --sidebar-accent-foreground: #272727;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #5BC1C3;
+}
+
+.dark {
+  --background: #272727;
+  --foreground: #F6F1EF;
+  --card: #333333;
+  --card-foreground: #F6F1EF;
+  --popover: #333333;
+  --popover-foreground: #F6F1EF;
+  --primary: #D42B2B;
+  --primary-foreground: #FFFFFF;
+  --secondary: #3A3A3A;
+  --secondary-foreground: #F6F1EF;
+  --muted: #3A3A3A;
+  --muted-foreground: #A39890;
+  --accent: #D42B2B;
+  --accent-foreground: #FFFFFF;
+  --destructive: #D42B2B;
+  --destructive-foreground: #FFFFFF;
+  --border: #444444;
+  --input: #444444;
+  --ring: #D42B2B;
+  --chart-1: #D42B2B;
+  --chart-2: #F6F1EF;
+  --chart-3: #A39890;
+  --chart-4: #3A3A3A;
+  --chart-5: #272727;
+  --sidebar: #333333;
+  --sidebar-foreground: #F6F1EF;
+  --sidebar-primary: #D42B2B;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #3A3A3A;
+  --sidebar-accent-foreground: #F6F1EF;
+  --sidebar-border: #444444;
+  --sidebar-ring: #D42B2B;
+}
+
+@theme inline {
+  --font-sans: var(--font-sans, 'Jura'), 'Jura Fallback', sans-serif;
+  --font-serif: var(--font-display, 'Julius Sans One'), 'Julius Sans One Fallback', sans-serif;
+  --font-mono: var(--font-script, 'Pacifico'), 'Pacifico Fallback', cursive;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translate3d(0, -190%, 0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  70% {
+    transform: translate3d(0, 100%, 0) rotate(160deg);
+    opacity: 1;
+  }
+  88% {
+    transform: translate3d(0, 175%, 0) rotate(220deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 195%, 0) rotate(260deg);
+    opacity: 0;
+  }
+}
+
+@layer utilities {
+  .confetti-piece {
+    position: absolute;
+    top: 0;
+    width: 1rem;
+    height: auto;
+    opacity: 0;
+    animation-name: confetti-fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
