@@ -5,45 +5,45 @@ const CONFETTI_PIECES = [
   // fila superior
   {
     src: "/confeti_cian.svg",
-    positionClass: "top-[8%] left-[8%]",
+    positionClass: "top-[8%] left-[85%]",
   },
   {
     src: "/confeti_orange.svg",
-    positionClass: "top-[6%] left-[32%]",
+    positionClass: "top-[6%] left-[38%]",
   },
   {
     src: "/confeti_grayblue.svg",
-    positionClass: "top-[5%] left-[55%]",
+    positionClass: "top-[5%] left-[15%]",
   },
   {
     src: "/confeti_red.svg",
-    positionClass: "top-[9%] left-[78%]",
+    positionClass: "top-[45%] left-[35%]",
   },
   // alrededor del bebé
   {
     src: "/confeti_beige.svg",
-    positionClass: "top-[32%] left-[12%]",
+    positionClass: "top-[32%] left-[90%]",
   },
   {
     src: "/confeti_coral.svg",
-    positionClass: "top-[30%] left-[42%]",
+    positionClass: "top-[45%] left-[5%]",
   },
   {
     src: "/confeti_green.svg",
-    positionClass: "top-[34%] left-[70%]",
+    positionClass: "top-[0%] left-[60%]",
   },
   // parte baja
   {
     src: "/confeti_gray.svg",
-    positionClass: "top-[55%] left-[20%]",
+    positionClass: "top-[20%] left-[8%]",
   },
   {
     src: "/confeti_cian.svg",
-    positionClass: "top-[58%] left-[50%]",
+    positionClass: "top-[25%] left-[30%]",
   },
   {
-    src: "/confeti_red.svg",
-    positionClass: "top-[52%] left-[76%]",
+    src: "/confeti_coral.svg",
+    positionClass: "top-[56%] left-[85%]",
   },
 ];
 

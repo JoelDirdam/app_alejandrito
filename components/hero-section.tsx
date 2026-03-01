@@ -3,7 +3,7 @@ import { AnimateOnScroll } from "./animate-on-scroll";
 
 export function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center overflow-hidden px-4 pt-6 pb-12">
+    <section className="relative flex flex-col items-center overflow-hidden px-4 pt-6 pb-12 bg-linear-to-t from-[#D7F0F0] from-5% via-white via-45% to-white to-50%">
       {/* Triangle flags at the very top */}
       <img
         src={EVENT_DATA.images.triangleFlags}

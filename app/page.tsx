@@ -8,7 +8,7 @@ export default function InvitationPage() {
   return (
     <main className="min-h-svh bg-white">
       {/* <div className="mx-auto w-full max-w-[430px] overflow-hidden rounded-[28px]  bg-white shadow-[0_24px_80px_rgba(32,86,89,0.18)]"> */}
-      <div className="mx-auto w-full max-w-[450px] overflow-hidden bg-white shadow-[0_24px_80px_rgba(32,86,89,0.18)]">
+      <div className="mx-auto w-full max-w-112.5 overflow-hidden bg-white shadow-[0_24px_80px_rgba(32,86,89,0.18)]">
         <HeroSection />
         <EventInfoSection />
         <MapSection />

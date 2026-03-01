@@ -3,9 +3,19 @@ import { AnimateOnScroll } from "./animate-on-scroll";
 
 export function GiftRegistrySection() {
   return (
-    <section className="relative px-6 py-12 md:py-16">
-      <div className="relative z-10 max-w-md mx-auto">
-        {/* Gift text - Jura */}
+    <section className="relative">
+      {/* Franja de fondo a ancho completo al inicio para continuidad con la sección anterior */}
+      <div
+        className="relative left-1/2 -translate-x-1/2 overflow-hidden"
+      >
+        <img
+          src="https://res.cloudinary.com/dv1u9zrhl/image/upload/v1772326163/race_track_ng9ldz.png"
+          alt="Imagen pista de carreras"
+          className="w-full h-14 object-cover object-top"
+        />
+      </div>
+      <div className="relative z-10 px-6 pt-12 pb-6 md:py-16">
+        <div className="max-w-md mx-auto">
         <AnimateOnScroll>
           <p className="font-sans text-foreground font-bold text-center text-xl md:text-2xl leading-relaxed mb-8">
             Tu presencia es mi mejor regalo, pero si deseas darme un obsequio
@@ -39,13 +49,14 @@ export function GiftRegistrySection() {
                   className="w-10"
                 />
                 {/* Label - Pacifico */}
-                <span className="font-mono text-foreground text-lg" style={{color: `${link.color}`}}>
+                <span className="font-mono text-foreground text-lg" style={{ color: `${link.color}` }}>
                   {link.label}
                 </span>
               </a>
             </AnimateOnScroll>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
