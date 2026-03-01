@@ -65,7 +65,7 @@ export function FooterSection() {
           <img
             src={EVENT_DATA.images.trophy}
             alt="Gold trophy"
-            className="w-52 mb-6 z-10"
+            className="w-52 mb-6 z-10 animate-float"
           />
         </AnimateOnScroll>
 

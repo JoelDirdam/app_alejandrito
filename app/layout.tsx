@@ -26,6 +26,9 @@ const jura = Jura({
 export const metadata: Metadata = {
   title: 'The Fast One - Alejandro cumple 1 añito',
   description: '¡Quiero que celebres conmigo mi primer añito!',
+  icons: {
+    icon: 'https://res.cloudinary.com/dv1u9zrhl/image/upload/v1772250139/casco_icon_ottqxn.svg',
+  },
 }
 
 export const viewport: Viewport = {

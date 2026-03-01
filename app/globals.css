@@ -147,6 +147,15 @@
   }
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(10);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 @layer utilities {
   .confetti-piece {
     position: absolute;
@@ -157,5 +166,9 @@
     animation-name: confetti-fall;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+  }
+
+  .animate-float {
+    animation: float 2.5s ease-in-out infinite;
   }
 }
