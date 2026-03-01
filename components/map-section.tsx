@@ -68,7 +68,7 @@ export function MapSection() {
           <img
             src={EVENT_DATA.images.babyHelmet}
             alt="Baby Alejandro with a racing helmet"
-            className="w-64 md:w-72 mx-auto relative z-10"
+            className="w-64 md:w-72 mx-auto z-10 animate-float-baby"
           />
           <img
             src={EVENT_DATA.images.flagBackground}

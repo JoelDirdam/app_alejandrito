@@ -156,6 +156,15 @@
   }
 }
 
+@keyframes float-baby {
+  0%, 100% {
+    transform: translateY(10);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 @layer utilities {
   .confetti-piece {
     position: absolute;
@@ -170,5 +179,9 @@
 
   .animate-float {
     animation: float 2.5s ease-in-out infinite;
+  }
+
+  .animate-float-baby {
+    animation: float-baby 2.5s ease-in-out infinite;
   }
 }
