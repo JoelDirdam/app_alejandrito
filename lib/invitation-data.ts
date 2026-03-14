@@ -16,19 +16,19 @@ export const EVENT_DATA = {
 
   // Event date display
   dateMonth: "Marzo",
-  dateDay: "07",
+  dateDay: "14",
 
   // Event time
   time: "03:00 pm",
 
   // Event location name
-  locationName: "Lorem ipsum",
+  locationName: "Calle Linda Vista 425",
 
   // Event location address
-  locationAddress: "Residencial Lorem ipsum",
+  locationAddress: "Linda Vista Recidencial",
 
   // Map link (Google Maps, Apple Maps, etc.)
-  mapLink: "#",
+  mapLink: "https://maps.apple/p/aTZM7w2Y.rftWy",
 
   // Gift registry links
   giftRegistryLinks: [
